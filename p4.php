@@ -129,7 +129,7 @@
 	    || (total_line($posx, $posy, -1, 1) >= 4));
     }
 
-    // Si c'est la première fois qu'on charge cette page, ou si on a explicitement 
+    // Si c'est la premiï¿½re fois qu'on charge cette page, ou si on a explicitement 
     // demande a recommencer le jeu, on doit initialiser le plateau de jeu 
     // et c'est au joueur 1 de jouer
     if ((!isset($board))) {
@@ -151,7 +151,7 @@
 <html>
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<link rel="stylesheet" type="text/css" href="p4.css" title="Normal" />
+	<link rel="stylesheet" type="text/css" href="css/p4.css" title="Normal" />
 	<title>Puissance 4</title>
     </head>
     <body>
@@ -161,7 +161,7 @@
 		// Si le coup est valide, il est joue, on verifie s'il est gagnant et on passe au tour suivant
 		if (play(($_POST["column"] - 1), $turn)) {
 		    if (is_win()) {
-			echo "<b>".(($turn == 1) ? $j1 : $j2 )." a gagné !</b><br />";
+			echo "<b>".(($turn == 1) ? $j1 : $j2 )." a gagnï¿½ !</b><br />";
 			$_SESSION["finish"] = true;
 		    } else {
 		    $turn=($turn%2) + 1;
@@ -170,7 +170,7 @@
 	    }
 	    print_board();
 
-	    echo "C'est à ".(($turn == 1)? $j1 : $j2).' (<img src="'.(($turn == 1)? "joueur1.png" : "joueur2.png" ).'" alt="pionJoueur" height="15">) de jouer.'."\n"
+	    echo "C'est ï¿½ ".(($turn == 1)? $j1 : $j2).' (<img src="'.(($turn == 1)? "joueur1.png" : "joueur2.png" ).'" alt="pionJoueur" height="15">) de jouer.'."\n"
 	?>
 
 	<form action="p4.php" method="post">
