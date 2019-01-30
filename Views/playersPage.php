@@ -6,7 +6,7 @@
     </head>
     <body>
 	<div>
-	<form action="index.php?url=p4" method="post">
+	<form action="index.php?url=gamepage" method="post">
 	    Nom du joueur 1 :
 	    <input type="text" name="nomj1" value=
 	    <?php
@@ -14,7 +14,7 @@
 		    echo '"'.$_COOKIE['nomj1'].'"';
 		}
 		else { echo '""'; }
-	    ?>
+	    ?> required
 	    />
 
 	    <br/>
@@ -26,8 +26,8 @@
 		    echo '"'.$_COOKIE['nomj2'].'"';
 		}
 		else { echo '""'; }
-	    ?>
-	    />
+	    ?> required
+        />
 
 	    <br/>
 
