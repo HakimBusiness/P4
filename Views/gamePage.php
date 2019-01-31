@@ -13,6 +13,12 @@
             if ($coupGagnant->is_win($donnees)) {
                 echo "<b>".(($GLOBALS["turn"] == 1) ? $j1 : $j2 )." a gagné !</b><br />";
                 $GLOBALS["finish"] = true;
+
+                //updating score
+                $winnerName = (($GLOBALS["turn"] == 1) ? $j1 : $j2 );
+                $winnerId= $modelGame->getPlayer($winnerName);
+                $modelGame->updateScore($winnerId);
+
             } else {
                 $GLOBALS["turn"]=($GLOBALS["turn"]%2) + 1;
             }

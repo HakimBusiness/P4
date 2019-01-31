@@ -32,7 +32,13 @@
 	    <br/>
 
 	    <input type="submit" name="nomJoueur" value="Commencer" />
+
 	</form>
+
+        <br/>
+
+        <a href="index.php?url=classement"> <input type="button" name="btnClassement" value="Classement des joueurs" /> </a>
+
 	</div>
     </body>
 </html>

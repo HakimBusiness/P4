@@ -5,6 +5,25 @@ class ControllerGamepage
 
     public function __construct($donnees)
     {
+
+        require_once("Models/ModelGame.php");
+        $modelGame = new ModelGame();
+
+        //inscription des "NOUVEAUX" joueurs dans la base des donnees
+        if (isset($donnees["nomj1"]) && isset($donnees["nomj2"])){
+
+            $nom_joueur1 = $donnees["nomj1"];
+            $nom_joueur2 = $donnees["nomj2"];
+
+            if ( !($modelGame->is_exist($nom_joueur1)) ){
+                $modelGame->createPlayer($nom_joueur1);
+            }
+            if ( !($modelGame->is_exist($nom_joueur2)) ){
+                $modelGame->createPlayer($nom_joueur2);
+            }
+
+        }
+
         define("HAUT","6");
         define("LARG","7");
 
