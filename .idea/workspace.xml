@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26ab75d8-b2f3-4b57-ba72-3d75eabc1c86" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ControllerGamepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ControllerGamepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/gamePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/gamePage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/playersPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/playersPage.php" afterDir="false" />
-    </list>
+    <list default="true" id="26ab75d8-b2f3-4b57-ba72-3d75eabc1c86" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +48,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gamePage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gamePage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/gamePage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -62,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerGamepage.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControllerGamepage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/ControllerGamepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="300">
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -235,16 +230,15 @@
       <updated>1548785369996</updated>
       <workItem from="1548785371268" duration="14140000" />
       <workItem from="1548874448305" duration="5715000" />
-      <workItem from="1548949044898" duration="10099000" />
+      <workItem from="1548949044898" duration="10409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29954000" />
+    <option name="totallyTimeSpent" value="30264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25579977" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -444,17 +438,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/ControllerGamepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/gamePage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/ControllerGamepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
         </state>
       </provider>
     </entry>
