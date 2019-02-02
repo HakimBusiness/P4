@@ -14,10 +14,10 @@ class BD
     public function __construct()
     {
         $this->server = "localhost";
-        $this->port = "8889";
+        $this->port = "3306";
         $this->base = "P4";
         $this->user = "root";
-        $this->password = "root";
+        $this->password = "";
         $this->dsn = "mysql:host=".$this->server.";port=".$this->port.";dbname=".$this->base;
     }
 
