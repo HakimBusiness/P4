@@ -28,13 +28,14 @@ class ModelGame
 
     public function createPlayer($playerName)
     {
-
+        $result=false;
         $bdd = new BD();
         $connexion = $bdd->connect();
         $requette = " INSERT INTO Resultat_Jeu(NOM_JOUEUR) VALUES ('$playerName') ";
-        $connexion->exec($requette) or die(print_r($connexion->errorInfo())) ;
+       if( $connexion->exec($requette) != null){$result=true;} else die(print_r($connexion->errorInfo()));
+       
         $bdd->deconnect();
-
+        return $result;
     }
 
     public function getPlayer($winnerName)
@@ -56,7 +57,7 @@ class ModelGame
 
     public function updateScore($winnerId)
     {
-
+        $result=false;
         $bdd = new BD();
         $connexion = $bdd->connect();
         $requette = " SELECT SCORE FROM Resultat_Jeu WHERE ID='$winnerId' ";
@@ -66,10 +67,10 @@ class ModelGame
             $score = $data["SCORE"];
             $newScore = $score + 1;
             $requette = " UPDATE Resultat_Jeu SET SCORE='$newScore' WHERE ID='$winnerId' ";
-            $connexion->exec($requette) or die(print_r($connexion->errorInfo())) ;
+           if($connexion->exec($requette)!=null){$result=true;} else die(print_r($connexion->errorInfo())) ;
         }
         $bdd->deconnect();
-
+         return $result;
     }
 
     public function getClassement()
